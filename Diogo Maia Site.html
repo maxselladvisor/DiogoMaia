@@ -23,7 +23,7 @@
         <!-- Aqui é onde o Voiceglow renderiza o widget. -->
     </div>
 
-    <script defer>
+    <script>
         (function() {
             window.VG_CONFIG = {
                 ID: "d89lwo3psi5jdp4",
@@ -39,6 +39,7 @@
             };
             var VG_SCRIPT = document.createElement("script");
             VG_SCRIPT.src = "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/vg_bundle.js";
+            VG_SCRIPT.async = true;
             document.body.appendChild(VG_SCRIPT);
         })();
     </script>
