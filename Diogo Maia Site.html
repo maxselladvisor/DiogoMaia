@@ -8,6 +8,7 @@
         html, body {
             height: 100%;
             margin: 0;
+            overflow: hidden; /* Impede rolagem se o conteúdo exceder a tela */
         }
         #VG_OVERLAY_CONTAINER {
             width: 100%;
@@ -15,6 +16,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background: #fff; /* Opcional: muda a cor de fundo */
         }
     </style>
 </head>
@@ -28,11 +30,10 @@
             window.VG_CONFIG = {
                 ID: "d89lwo3psi5jdp4",
                 region: 'eu', // 'eu' ou 'na' correspondendo a Europa e América do Norte
-                render: 'full-width', // popup ou full-width
+                render: 'full-width', // Força o widget a cobrir a tela inteira
                 stylesheets: [
-                    // CSS base do Voiceglow
                     "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/styles.css",
-                    // Adicione suas folhas de estilo CSS personalizadas, também pode adicionar URL relativa ('/public/your-file.css)
+                    // Adicione suas folhas de estilo CSS personalizadas aqui
                 ],
                 // userID: 'USER_ID', // Se quiser usar seu próprio user_id
                 // autostart: true, // Se deseja iniciar automaticamente o chatbot com a mensagem proativa
@@ -45,5 +46,6 @@
     </script>
 </body>
 </html>
+
 
 
